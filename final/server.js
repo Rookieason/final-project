@@ -1,6 +1,6 @@
 import express from 'express'
 import mongoose from 'mongoose'
-import router from './backend/routes/router'
+import router from './backend/routes/router.js'
 import cors from 'cors' 
 import http from 'http'
 import WebSocket from 'ws'
@@ -9,11 +9,11 @@ import path from "path";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 
-import {User, ConnectFour} from './backend/models/connectFour_mongo'
-import {sendData, sendStatus} from './backend/wssConnect'
-import {licensingcard} from "./backend/uitility/sixNimmt_utilities"
-import {checkForWin} from "./backend/uitility/connectFour_utilities"
-import {SixNimmtRoom, PlayerInfo} from "./backend/models/sixNimmt_mongo"
+import {User, ConnectFour} from './backend/models/connectFour_mongo.js'
+import {sendData, sendStatus} from './backend/wssConnect.js'
+import {licensingcard} from "./backend/uitility/sixNimmt_utilities.js"
+import {checkForWin} from "./backend/uitility/connectFour_utilities.js"
+import {SixNimmtRoom, PlayerInfo} from "./backend/models/sixNimmt_mongo.js"
 
 dotenv.config();
 
@@ -43,7 +43,7 @@ app.listen(port, () =>
   console.log(`Example app listening on port ${port}!`),
 );
 
-const server = http.createServer();
+const server = http.createServer(app);
 server.listen(4000, () => console.log("Listening.. on 4000"))
 
 const wss = new WebSocket.Server({
