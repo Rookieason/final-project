@@ -2,8 +2,8 @@ import { Button, Layout, Menu } from 'antd';
 import { Card, Row, Col, Image, Modal, Input} from 'antd'
 import { TagOutlined, UserOutlined, TrophyOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
 import { useState } from 'react';
-import axios from '../api'; 
-import ConnectFourModal from '../Components/ConnectFour/ConnectFourModal';
+import axios from '../api.js'; 
+import ConnectFourModal from '../Components/ConnectFour/ConnectFourModal.js';
 const { Header, Content, Sider } = Layout;
 const { Meta } = Card  
 

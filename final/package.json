@@ -1,6 +1,7 @@
 {
   "name": "final",
   "version": "0.1.0",
+  "type": "module",
   "main": "index.js",
   "license": "MIT",
   "private": true,
@@ -14,28 +15,32 @@
     "@babel/preset-env": "^7.16.5",
     "dotenv-defaults": "^3.0.0",
     "mini-css-extract-plugin": "2.4.5",
-    "mongoose": "^6.1.2"
+    "mongoose": "^6.1.2",
+    "webpack": "^4.44.2"
   },
   "overrides": {
     "mini-css-extract-plugin": "2.4.5"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "apollo-link-ws": "^1.0.20",
+    "apollo-server-express": "^2.25.2",
     "antd": "^4.17.4",
     "axios": "^0.24.0",
     "cors": "^2.8.5",
-    "express": "^4.17.2",
+    "express": "^4.17.1",
     "http": "^0.0.1-security",
     "nodemon": "^2.0.15",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
+    "react": "^17.0.1",
+    "react-apollo": "^3.1.5",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "react-router-dom": "^5.2.0",
     "styled-components": "^5.3.3",
-    "web-vitals": "^2.1.2",
-    "webpack": "^5.66.0",
+    "web-vitals": "^0.2.4",
     "ws": "^8.4.0"
   },
   "scripts": {

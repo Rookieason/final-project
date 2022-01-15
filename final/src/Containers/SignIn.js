@@ -1,7 +1,7 @@
 import { Input } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 import styled from "styled-components"
-import axios from '../api'; 
+import axios from '../api.js'; 
 
 const Title = styled.div`
     display: flex;

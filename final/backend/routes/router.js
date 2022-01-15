@@ -1,5 +1,5 @@
 import express from 'express'
-import { User } from '../models/connectFour_mongo'
+import { User } from '../models/connectFour_mongo.js'
 import mongoose from 'mongoose';
 
 const router = express.Router()
