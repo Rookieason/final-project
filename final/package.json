@@ -39,6 +39,7 @@
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.3.3",
     "web-vitals": "^0.2.4",
+    "mongoose": "^5.12.15",
     "ws": "^8.4.0"
   },
   "scripts": {
