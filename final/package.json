@@ -43,6 +43,7 @@
     "react_start": "react-scripts start",
     "build": "react-scripts build"
   },
+  "proxy": "http://localhost:5000",
   "eslintConfig": {
     "extends": [
       "react-app",
