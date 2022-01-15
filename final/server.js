@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 import router from './backend/routes/router.js'
 import cors from 'cors' 
 import http from 'http'
-import WebSocket from 'ws'
+import { WebSocketServer } from 'ws'
 import dotenv from "dotenv-defaults"
 import path from "path";
 import { dirname } from "path";
@@ -46,7 +46,7 @@ app.listen(port, () =>
 const server = http.createServer(app);
 server.listen(4000, () => console.log("Listening.. on 4000"))
 
-const wss = new WebSocket.Server({
+const wss = new WebSocketServer({
   server
 });
 
